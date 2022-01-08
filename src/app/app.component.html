@@ -1,8 +1,18 @@
 <div>
     <nav-header></nav-header>
     <div class="container">
-        <div style="padding: 10px" *ngFor="let newspaper of newspapers">
-            <app-paper-card [paperName]="newspaper"></app-paper-card>
-        </div>
+        <div *ngIf="newspapers.length == 0; else elseblock">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            <app-spinner></app-spinner>
+        </div>     
+        <ng-template #elseblock>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4 col-sm-6" style="padding: 10px" *ngFor="let newspaper of newspapers">
+                        <app-paper-card [paperName]="newspaper"></app-paper-card>
+                    </div>
+                </div>
+                
+            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        </ng-template>
     </div>
 </div>
