@@ -1,10 +1,4 @@
 .bg-clr {
-    background-color: red !important;
-    animation: myanim 10s infinite;
+    background-color: #4285F4 !important;
+    color: white;
 }
-
-@keyframes myanim {
-    20% {
-       box-shadow: 0px 5px 30px blueviolet;
-    }
- }

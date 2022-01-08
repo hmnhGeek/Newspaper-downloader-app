@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PaperCardComponent } from './paper-card/paper-card.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavHeaderComponent,
-    PaperCardComponent
+    PaperCardComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
